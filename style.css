@@ -1,0 +1,91 @@
+.header, .container{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-size: 60px;
+    background: linear-gradient(to right, #ae518a, #f6ede7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#particles-js {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+.inputField{
+    padding: 10px;
+    width: 40%;
+    border: none;
+    color: #ae518a;
+}
+.btn{
+    padding: 20px;
+    border: none;
+    background-color: #af5389;
+}
+body{
+    background-image: url('https://images.unsplash.com/photo-1422207258071-70754198c4a2?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGN1cCUyMG9mJTIwY29mZmVlfGVufDB8fDB8fHww');
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+    background-color: #2f3132;
+}
+.toDoAdded{
+    background-color: #f6ede7;
+    list-style-type: none;
+    height: 60px;
+    width: 40%;
+    text-align: center;
+    color: #ae518a;
+    font-size: 20px;
+    border-bottom: 1px solid #c873a77d;
+
+    display: block;  
+    padding: 15px 5px 5px 5px; 
+    height:40px;
+    margin-left: 100px;
+  
+}
+.toDoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.toDoComplited{
+    background-color: #8bc885;
+    color: #000000;
+    text-decoration: line-through;
+    transition: all 3s ease;
+    font-weight: bold;
+}
+@media all and (max-width: 800px) {
+    h1{
+        font-size: 40px;
+        margin-top: 60px;
+    }
+    .btn{
+        padding: 10px;
+    }
+    .inputField, .btn{
+        margin-top: 30px;
+    }
+    .toDoAdded{
+        display: block;  
+        padding: 15px 5px 5px 5px; 
+        height:30px;
+        margin-left: 0;
+        font-size: 10px;
+    }
+
+}
+@media all and (max-width: 500px) {
+    h1{
+        font-size: 20px;
+    }
+    .btn{
+        padding: 10px;
+    }
+}
